@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FP | Astro Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="top" class="main-header">
+        <span>
+      	 WHAT IS YOUR WEIGHT?
+        </span>
+        <h1>Astro Weight Calculator</h1>
+    </header>
+    <h1>
+		</h1>
+    <div class="primary-content">
+        <form>
+            Select your Planet:
+            <name="selectYourPlanet">
+                <!--   'Gravity' is used for user to select the planets to figure weight. -->
+        </form>
+        <select id="gravity" class="form-entry">
+            <option value="27.9">Sun</option>
+            <option value='0.377'>Mercury</option>
+            <option value="0.9032">Venus</option>
+            <option value="1">Earth</option>
+            <option value="0.1655">Moon</option>
+            <option value="0.3895">Mars</option>
+            <option value="2.640">Jupiter</option>
+            <option value="1.139">Saturn</option>
+            <option value="0.917">Uranus</option>
+            <option value="1.148">Neptune</option>
+            <option value="0.06">Pluto</option>
+        </select>
+        <form class="form-entry">
+            Enter your weight:
+            <input type="text" id="enterYourWeight" size="6">
+        </form>
+        <button type="button" onclick="calculator()">
+            Find Out
+        </button>
+        <p id='convertedWeight'></p>
+
+    </div>
+     <footer id="main-footer">
+        <p>All rights reserved to <a href="#">Astro Weight Calculator</a></p>
+        <a href="#top">Back to top &raquo;</a>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
